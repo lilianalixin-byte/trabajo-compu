@@ -100,7 +100,7 @@ hr {
     justify-content: space-between;
 }
 
-.hero h3 {
+.hero h2 {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 16px;
@@ -150,19 +150,6 @@ hr {
     border: 2px solid transparent;
 }
 
-.btn-inicio {
-    background-color: transparent;
-    color: var(--dark);
-    border-color: var(--dark);
-    position: relative;
-    left: 400px
-}
-
-.btn-inicio:hover {
-    background-color: var(--dark);
-    color: rgb(110, 125, 255);
-    transform: translate(-2px);
-}
 .btn-primary {
     background-color: var(--primary);
     color: rgba(25, 45, 112, 0.699);
@@ -194,7 +181,7 @@ hr {
 .profile {
     position: relative;
     bottom: 300px;
-    left: 800px;
+    left: 700px;
 }
 
 .off, .delivery {
@@ -252,6 +239,7 @@ box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: #3a5188;
 }
+
 .container{
     width: 100%;
     display: flex;
@@ -356,9 +344,72 @@ box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.4);
     visibility: visible;
 }
 
-.container li:hover span{
+.container li:hover span {
     scale: 1;
     opacity: 1;
     visibility: visible;
 }
 
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #3a5188;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: #83a5d1;
+}
+
+.heading span{
+    color: var(--pink);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    color: #204085;
+    background: #fff;
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+.about .row .content{
+    flex:1 1 40 rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color: #3a5188;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #333;
+    padding: 5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
